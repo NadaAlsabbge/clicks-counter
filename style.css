@@ -23,6 +23,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    padding: 5px;
 }
 
 #counter-label {
@@ -34,22 +35,21 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    gap: 5px;
     width: 100%;
 }
 
 .button button {
     padding: 8px 24px;
-    font-size: 25px;
+    font-size: 20px;
     color: #fff;
     background-color: blue;
     border: none;
 }
 
-@media (max-width:599px) {
-    .button {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        justify-content: space-between;
+@media (max-width:800px) {
+    .button button {
+        padding: 5px 20px;
+        font-size: 18px;
     }
 }
